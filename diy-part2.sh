@@ -25,6 +25,8 @@ cat >> .config <<EOF
 # CONFIG_PACKAGE_luci-app-accesscontrol is not set
 # CONFIG_PACKAGE_luci-app-vlmcsd is not set
 # CONFIG_PACKAGE_luci-app-unblockmusic is not set
+# CONFIG_PACKAGE_luci-app-ssr-plus is not set
+# CONFIG_DEFAULT_luci-app-ssr-plus is not set
 EOF
 
 # 5. Protocols
@@ -63,8 +65,9 @@ CONFIG_PACKAGE_kmod-fs-vfat=y
 EOF
 
 #启用软件
-#cat >> .config <<EOF
-#EOF
+cat >> .config <<EOF
+CONFIG_PACKAGE_luci-app-v2ray=y
+EOF
 
 #启用主题
 #cat >> .config <<EOF
