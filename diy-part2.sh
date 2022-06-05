@@ -27,7 +27,7 @@ cat >> .config <<EOF
 # CONFIG_PACKAGE_luci-app-unblockmusic is not set
 EOF
 
-使固件支持tf卡扩展
+#使固件支持tf卡扩展
 cat >> .config <<EOF
 CONFIG_PACKAGE_kmod-nls-cp437=y
 CONFIG_PACKAGE_kmod-nls-iso8859-1=y

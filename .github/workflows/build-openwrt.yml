@@ -16,7 +16,7 @@ on:
     inputs:
       ssh:
         description: 'SSH connection to Actions'
-        required: false
+        required: true
         default: 'false'
 
 env:
@@ -36,6 +36,7 @@ env:
 jobs:
   build:
     runs-on: ubuntu-20.04
+    timeout-minutes: 360
 
     steps:
     - name: Checkout
