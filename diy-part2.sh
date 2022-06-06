@@ -27,6 +27,7 @@ CONFIG_PACKAGE_luci-app-vlmcsd=n
 CONFIG_PACKAGE_luci-app-unblockmusic=n
 CONFIG_PACKAGE_luci-app-ssr-plus=n
 CONFIG_DEFAULT_luci-app-ssr-plus=n
+CONFIG_PACKAGE_luci-app-vsftpd=n
 EOF
 
 # 5. Protocols
