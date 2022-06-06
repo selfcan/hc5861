@@ -22,11 +22,11 @@ EOF
 
 # 取消默认启用的软件
 cat >> .config <<EOF
-# CONFIG_PACKAGE_luci-app-accesscontrol is not set
-# CONFIG_PACKAGE_luci-app-vlmcsd is not set
-# CONFIG_PACKAGE_luci-app-unblockmusic is not set
-# CONFIG_PACKAGE_luci-app-ssr-plus is not set
-# CONFIG_DEFAULT_luci-app-ssr-plus is not set
+CONFIG_PACKAGE_luci-app-accesscontrol=n
+CONFIG_PACKAGE_luci-app-vlmcsd=n
+CONFIG_PACKAGE_luci-app-unblockmusic=n
+CONFIG_PACKAGE_luci-app-ssr-plus=n
+CONFIG_DEFAULT_luci-app-ssr-plus=n
 EOF
 
 # 5. Protocols
@@ -66,7 +66,12 @@ EOF
 
 #启用软件
 cat >> .config <<EOF
-CONFIG_PACKAGE_luci-app-v2ray=y
+CONFIG_PACKAGE_luci-app-vssr=y
+CONFIG_PACKAGE_luci-app-vssr_INCLUDE_Xray=y
+CONFIG_PACKAGE_luci-app-vssr_INCLUDE_Xray_plugin=y
+CONFIG_PACKAGE_luci-app-vssr_INCLUDE_Trojan=n
+CONFIG_PACKAGE_luci-app-vssr_INCLUDE_Kcptun=n
+CONFIG_PACKAGE_luci-app-vssr_INCLUDE_ShadowsocksR_Libev_Server=n
 EOF
 
 #启用主题
