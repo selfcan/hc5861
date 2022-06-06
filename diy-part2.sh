@@ -67,18 +67,18 @@ EOF
 
 # Disc
 cat >> .config <<EOF
-CONFIG_PACKAGE_blockdev=y
-CONFIG_PACKAGE_cfdisk=y
-CONFIG_PACKAGE_cgdisk=y
-CONFIG_PACKAGE_fdisk=y
-CONFIG_PACKAGE_findfs=y
-CONFIG_PACKAGE_fixparts=y
-CONFIG_PACKAGE_gdisk=y
-CONFIG_PACKAGE_hd-idle=y
-CONFIG_PACKAGE_hdparm=y
 CONFIG_PACKAGE_lsblk=y
 CONFIG_PACKAGE_parted=y
-CONFIG_PACKAGE_partx-utils=y
+CONFIG_PACKAGE_cfdisk=y
+CONFIG_PACKAGE_blockdev=m
+CONFIG_PACKAGE_fdisk=m
+CONFIG_PACKAGE_cgdisk=m
+CONFIG_PACKAGE_findfs=m
+CONFIG_PACKAGE_fixparts=m
+CONFIG_PACKAGE_gdisk=m
+CONFIG_PACKAGE_hd-idle=m
+CONFIG_PACKAGE_hdparm=m
+CONFIG_PACKAGE_partx-utils=m
 EOF
 
 # Filesystem
