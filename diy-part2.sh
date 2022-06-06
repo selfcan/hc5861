@@ -53,6 +53,8 @@ EOF
 # 使固件支持tf卡扩展
 cat >> .config <<EOF
 CONFIG_PACKAGE_automount=y
+CONFIG_PACKAGE_kmod-fs-antfs=y
+CONFIG_PACKAGE_antfs-mount=y
 CONFIG_PACKAGE_kmod-nls-cp437=y
 CONFIG_PACKAGE_kmod-nls-iso8859-1=y
 CONFIG_PACKAGE_kmod-nls-utf8=y
@@ -74,13 +76,11 @@ CONFIG_PACKAGE_cgdisk=y
 CONFIG_PACKAGE_eject=y
 CONFIG_PACKAGE_fdisk=y
 CONFIG_PACKAGE_findfs=y
-CONFIG_PACKAGE_fio=y
 CONFIG_PACKAGE_fixparts=y
 CONFIG_PACKAGE_gdisk=y
 CONFIG_PACKAGE_hd-idle=y
 CONFIG_PACKAGE_hdparm=y
 CONFIG_PACKAGE_lsblk=y
-CONFIG_PACKAGE_lvm2=y
 CONFIG_PACKAGE_mdadm=y
 CONFIG_PACKAGE_parted=y
 CONFIG_PACKAGE_partx-utils=y
@@ -91,18 +91,12 @@ EOF
 
 # Filesystem
 cat >> .config <<EOF
-CONFIG_PACKAGE_antfs-mount=y
 CONFIG_PACKAGE_exfat-fsck=y
 CONFIG_PACKAGE_exfat-mkfs=y
 CONFIG_PACKAGE_ntfs-3g=y
 CONFIG_PACKAGE_ntfs-3g-low=y
 CONFIG_PACKAGE_ntfs-3g-utils=y
-CONFIG_PACKAGE_owfs=y
-CONFIG_PACKAGE_owshell=y
 CONFIG_PACKAGE_resize2fs=y
-CONFIG_PACKAGE_squashfs-tools-mksquashfs=y
-CONFIG_PACKAGE_squashfs-tools-unsquashfs=y
-CONFIG_PACKAGE_swap-utils=y
 CONFIG_PACKAGE_sysfsutils=y
 EOF
 
