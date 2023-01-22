@@ -93,13 +93,13 @@ EOF
 
 #启用软件
 cat >> .config <<EOF
-CONFIG_PACKAGE_luci-app-vssr=m
-CONFIG_PACKAGE_luci-app-vssr_INCLUDE_Xray=m
-CONFIG_PACKAGE_luci-app-vssr_INCLUDE_Xray_plugin=m
-CONFIG_PACKAGE_luci-app-vssr_INCLUDE_Trojan=m
-CONFIG_PACKAGE_luci-app-vssr_INCLUDE_Kcptun=m
-CONFIG_PACKAGE_luci-app-vssr_INCLUDE_ShadowsocksR_Libev_Server=m
-CONFIG_PACKAGE_luci-app-diskman=m
+CONFIG_PACKAGE_luci-app-vssr=n
+CONFIG_PACKAGE_luci-app-vssr_INCLUDE_Xray=n
+CONFIG_PACKAGE_luci-app-vssr_INCLUDE_Xray_plugin=n
+CONFIG_PACKAGE_luci-app-vssr_INCLUDE_Trojan=n
+CONFIG_PACKAGE_luci-app-vssr_INCLUDE_Kcptun=n
+CONFIG_PACKAGE_luci-app-vssr_INCLUDE_ShadowsocksR_Libev_Server=n
+CONFIG_PACKAGE_luci-app-diskman=y
 EOF
 
 #启用主题
