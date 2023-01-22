@@ -12,6 +12,8 @@
 
 # Modify default IP
 sed -i 's/192.168.1.1/10.10.10.10/g' package/base-files/files/bin/config_generate
+# 清空登录密码
+sed -i 's/$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.//g' package/lean/default-settings/files/zzz-default-settings
 
 # 固件架构
 cat >> .config <<EOF
