@@ -23,6 +23,7 @@ echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.co
 git clone https://github.com/jerrykuku/lua-maxminddb.git package/lua-maxminddb #git lua-maxminddb 依赖
 
 git clone https://github.com/jerrykuku/luci-app-vssr.git package/luci-app-vssr
+git clone https://github.com/ntlf9t/luci-app-easymesh.git package/luci-app-easymesh
 
 # git clone https://github.com/kuoruan/openwrt-v2ray.git package/v2ray-core
 # git clone -b luci2 https://github.com/kuoruan/luci-app-v2ray.git package/luci-app-v2ray
