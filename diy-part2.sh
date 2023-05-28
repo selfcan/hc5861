@@ -99,7 +99,7 @@ CONFIG_PACKAGE_luci-app-vssr_INCLUDE_Xray_plugin=n
 CONFIG_PACKAGE_luci-app-vssr_INCLUDE_Trojan=n
 CONFIG_PACKAGE_luci-app-vssr_INCLUDE_Kcptun=n
 CONFIG_PACKAGE_luci-app-vssr_INCLUDE_ShadowsocksR_Libev_Server=n
-CONFIG_PACKAGE_luci-app-diskman=y
+CONFIG_PACKAGE_luci-app-diskman=n
 EOF
 
 #启用主题
